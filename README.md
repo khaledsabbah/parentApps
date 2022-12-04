@@ -14,7 +14,7 @@
 - use ``make`` command to automate operations
 
 # Install
-- extract the .zip file or download using `git clone https://khaledsabbah@bitbucket.org/khaledsabbah/parentApps.git`
+- extract the .zip file or download using `git clone https://github.com/khaledsabbah/parentApps.git`
 - `cd parentApps` <small> ( go to task location )</small>
 - `make init`
 - `make install permission`
