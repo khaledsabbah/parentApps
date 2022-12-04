@@ -19,7 +19,7 @@
 - `make init`
 - `make install permission`
 - You should see the following image
-![alt text](../images/Screenshot-20200625052906-1920x1053.png)
+![alt text](https://raw.githubusercontent.com/khaledsabbah/parentApps/master/images/docker.png)
 
 - To Open docker container use the following command 
     
@@ -35,7 +35,7 @@
 # Test Cases:
 
 - Run   `make test`
-- Then, you'll see result like this: ![alt text](../images/Screenshot-20200625053139-639x147.png) 
+- Then, you'll see result like this: ![alt text](https://raw.githubusercontent.com/khaledsabbah/parentApps/master/images/test.png) 
 
 ## Code Desgin and Architect
 I tried to apply S.O.L.I.D principles & use some design pattern and Hydrate everything into object as possible.
@@ -66,7 +66,7 @@ I tried to apply S.O.L.I.D principles & use some design pattern and Hydrate ever
         CONST JSON_RESPONSE_PARENT_KEY = "<< PARENT KEY OF THE JSON RESPONSE THAT HOLDS THE ARRAY OF OBJECTS >> ";
         //     ex: const JSON_RESPONSE_PARENT_KEY = "data";
 ```
-Look at This Image ![alt text](../images/users.png)
+Look at This Image ![alt text](https://raw.githubusercontent.com/khaledsabbah/parentApps/master/images/browser.png)
         
 4. Go to the browser and write endpoint url [http://localhost:8089/api/v1/users](http://localhost:8089/api/v1/users)
     > ```Note:  Even after adding Provider classes, You can enable and disable them by removing or commenting them from config/Providers.php ```
