@@ -57,7 +57,7 @@ abstract class AbstractDataProvider implements IDataProvider
             return $response->getBody();
         }else{
             // Load From Json File Local
-            return Storage::disk("local")->get(static::API_URL);
+            return Storage::disk("dataProvider")->get(static::API_URL);
         }
     }
 

@@ -7,7 +7,7 @@ namespace App\DataProviders;
 class DataProviderX extends AbstractDataProvider
 {
 
-    const API_URL = "providers/X.json";
+    const API_URL = "X.json";
 
     const JSON_RESPONSE_PARENT_KEY="data";
 

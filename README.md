@@ -58,7 +58,7 @@ I tried to apply S.O.L.I.D principles & use some design pattern and Hydrate ever
 ```php
         const API_URL = '<String containing API url> |  < Path To The Json File Inside Storage Public Disk >'; 
         //     ex: const API_URL= "https://";
-        //     ex: const API_URL= "providers/X.json";
+        //     ex: const API_URL= "Z.json"; ( This Jsong File Should Be Located as: source/storage/providers/Z.json )
     
         CONST OBJ_KEYS = ["<< Key Used In Code and Never Change That Key >> " => "API Reponse Key Mapper & changes Per Provider Response"];
         //     ex: CONST OBJ_KEYS = ['p_email' => 'parentEmail','reg_date' => 'Created_At','parent_id' => 'parentIdentification'];
