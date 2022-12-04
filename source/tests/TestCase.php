@@ -10,21 +10,11 @@ abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
 
-    protected $objKeys = [
-        'amount' => 'parentAmount',
-        'currency' => 'Currency',
-        'p_email' => 'parentEmail',
-        'status_code' => 'statusCode',
-        'reg_date' => 'registerationDate',
-        'parent_id' => 'parentIdentification'
-    ];
-
-    use CreatesApplication;
-
     public $users = [];
 
     public function setUp(): void
     {
+        parent::setUp();
         $this->users = UsersMockData::mockProvider();
     }
 
@@ -46,7 +36,7 @@ abstract class TestCase extends BaseTestCase
 
     public function hydrateUser($user, $providerName = '')
     {
-        return UserHydrator::hydrate($user, $this->objKeys)
+        return UserHydrator::hydrate($user, UsersMockData::getProviderObjKeys($providerName))
             ->setProviderName($providerName);
     }
 
@@ -54,7 +44,7 @@ abstract class TestCase extends BaseTestCase
     {
         $hydratedUsers = [];
         foreach ($users as $user) {
-            $hydratedUsers[] = UserHydrator::hydrate($user, $this->objKeys)
+            $hydratedUsers[] = UserHydrator::hydrate($user, UsersMockData::getProviderObjKeys($providerName))
                 ->setProviderName($providerName);
         }
         return $hydratedUsers;

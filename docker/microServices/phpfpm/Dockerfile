@@ -1,4 +1,4 @@
-FROM cyberduck/php-fpm-laravel:7.3
+FROM cyberduck/php-fpm-laravel:8.1
 
 RUN apt-get update \
     && apt-get install -y git zlib1g-dev zip unzip \

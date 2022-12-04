@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Tests\Providers;
+namespace Tests\MockData\Providers;
 
 
 class MockDataProviderY

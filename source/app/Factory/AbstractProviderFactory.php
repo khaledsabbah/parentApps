@@ -6,6 +6,7 @@ namespace App\Factory;
 use App\Contracts\IDataProvider;
 use App\Contracts\IFactory;
 use App\Exceptions\ProviderNotFoundException;
+use Illuminate\Support\Facades\Log;
 
 /**
  * Class AbstractProviderFactory
@@ -28,6 +29,7 @@ abstract class AbstractProviderFactory implements IFactory
         if( class_exists($service) ){
             return new $service();
         }
+        Log::info($service);
         throw  new ProviderNotFoundException($providerName,"Provider" );
     }
 }
